@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ayushi Classes | Academic Excellence</title>
+<link rel="shortcut icon" href="ayushi logo.png">
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#98805d",
+                        "surface-container": "#eceef0",
+                        "surface": "#f7f9fb",
+                        "on-background": "#191c1e",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-surface": "#191c1e",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#f2f4f6",
+                        "surface-bright": "#f7f9fb",
+                        "primary-fixed-dim": "#bec6e0",
+                        "secondary-fixed": "#89f5e7",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#6bd8cb",
+                        "on-secondary-fixed": "#00201d",
+                        "inverse-on-surface": "#eff1f3",
+                        "outline": "#76777d",
+                        "on-tertiary-fixed-variant": "#574425",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#565e74",
+                        "secondary-container": "#86f2e4",
+                        "primary-fixed": "#dae2fd",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#dec29a",
+                        "on-secondary-fixed-variant": "#005049",
+                        "surface-variant": "#e0e3e5",
+                        "on-primary-container": "#7c839b",
+                        "surface-dim": "#d8dadc",
+                        "background": "#f7f9fb",
+                        "on-tertiary-fixed": "#271901",
+                        "surface-container-high": "#e6e8ea",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#006f66",
+                        "on-surface-variant": "#45464d",
+                        "secondary": "#006a61",
+                        "primary": "#000000",
+                        "inverse-surface": "#2d3133",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#c6c6cd",
+                        "tertiary": "#000000",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#131b2e",
+                        "inverse-primary": "#bec6e0",
+                        "primary-container": "#131b2e",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#271901",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "tertiary-fixed": "#fcdeb5",
+                        "brand-navy": "#0f172a",
+                        "brand-teal": "#0d9488"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "margin-mobile": "24px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "500"}],
+                        "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        /* Scroll Reveal Effect */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform, opacity;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Marquee Animation */
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 30s linear infinite;
+        }
+        /* Slider dots active state */
+        .slider-dot.active {
+            width: 32px;
+            background: #0d9488;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-effect border-b border-outline-variant/20 px-margin-mobile md:px-margin-desktop h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img alt="Ayushi Classes Logo" class="h-20 w-20 rounded-full" src="ayushi logo.png">
+<span class="font-headline-md text-headline-md tracking-tight text-brand-navy">Ayushi Classes</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-brand-teal transition-colors" href="#hero">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-brand-teal transition-colors" href="#courses">Courses</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-brand-teal transition-colors" href="#testimonials">Success Stories</a>
+<button class="bg-brand-navy text-white px-6 py-2.5 rounded-full font-label-md text-label-md hover:bg-brand-navy/90 transition-all transform hover:scale-105 active:scale-95 shadow-sm">Get Started</button>
+</div>
+<button class="md:hidden p-2 rounded-full hover:bg-surface-container transition-all active:scale-90" id="mobile-menu-trigger">
+<span class="material-symbols-outlined text-brand-navy" data-icon="menu">menu</span>
+</button>
+</header>
+<!-- Navigation Drawer (Mobile) -->
+<div class="fixed inset-0 z-[60] invisible pointer-events-none transition-all duration-300" id="nav-drawer">
+<div class="absolute inset-0 bg-brand-navy/40 backdrop-blur-sm opacity-0 transition-opacity duration-300" id="drawer-overlay"></div>
+<div class="absolute top-0 right-0 h-full w-80 bg-surface-container-lowest shadow-2xl translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] flex flex-col p-8" id="drawer-content">
+<div class="flex justify-end mb-10">
+<button class="p-2 rounded-full hover:bg-surface-container transition-all active:scale-90" id="drawer-close">
+<span class="material-symbols-outlined text-brand-navy" data-icon="close">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-8">
+<a class="drawer-link flex items-center gap-4 text-headline-md text-on-surface-variant p-3 rounded-2xl transition-colors hover:bg-surface-container" href="#hero">
+<span class="material-symbols-outlined" data-icon="home">home</span> Home
+            </a>
+<a class="drawer-link flex items-center gap-4 text-headline-md text-on-surface-variant p-3 rounded-2xl transition-colors hover:bg-surface-container" href="#courses">
+<span class="material-symbols-outlined" data-icon="school">school</span> Courses
+            </a>
+            
+<a class="drawer-link flex items-center gap-4 text-headline-md text-on-surface-variant p-3 rounded-2xl transition-colors hover:bg-surface-container" href="#testimonials">
+<span class="material-symbols-outlined" data-icon="star">star</span> Success Stories
+            </a>
+<a class="drawer-link flex items-center gap-4 text-headline-md text-on-surface-variant p-3 rounded-2xl transition-colors hover:bg-surface-container" href="#contact">
+<span class="material-symbols-outlined" data-icon="mail">mail</span> Contact Us
+            </a>
+</nav>
+<div class="mt-auto">
+<button class="w-full bg-brand-teal text-white py-5 rounded-2xl font-label-md text-label-md shadow-lg shadow-brand-teal/20 transition-transform active:scale-95">Book a Free Trial</button>
+</div>
+</div>
+</div>
+<main class="pt-20">
+<!-- Hero Slider -->
+<section class="relative w-full h-[85vh] md:h-[90vh] overflow-hidden" id="hero">
+<div class="relative h-full w-full" id="hero-slider">
+<!-- Slide 1 -->
+<div class="slide absolute inset-0 transition-opacity duration-1000 opacity-100 flex items-center">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-brand-navy/70 to-transparent z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A professional home tutoring setting" src="image 1.png"/>
+</div>
+<div class="relative z-20 px-margin-mobile md:px-margin-desktop max-w-2xl">
+<span class="inline-block px-4 py-1.5 rounded-full bg-brand-teal text-white font-label-md text-label-md mb-6 transform translate-y-4 opacity-0 transition-all duration-700 delay-300" id="slide-1-badge">Premium Home Tutoring</span>
+<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-white mb-6 transform translate-y-4 opacity-0 transition-all duration-700 delay-500" id="slide-1-title">Empower Your Child's Academic Journey</h1>
+<p class="font-body-lg text-body-lg text-white/90 mb-10 transform translate-y-4 opacity-0 transition-all duration-700 delay-700" id="slide-1-text">Personalized tutoring sessions designed to build confidence, improve grades, and foster a lifelong love for learning.</p>
+<button class="bg-brand-teal text-white px-8 py-4 rounded-full font-label-md text-label-md flex items-center gap-3 hover:scale-105 active:scale-95 transition-all shadow-xl hover:shadow-brand-teal/40 transform translate-y-4 opacity-0 transition-all duration-700 delay-900" id="slide-1-btn">
+                        Book a Free Trial
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+
+</div>
+</div>
+<!-- Slide 2 -->
+<div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-brand-navy/70 to-transparent z-10"></div>
+<img class="w-full h-full object-cover" data-alt="College students in a modern library" src="image 2.png"/>
+</div>
+<div class="relative z-20 px-margin-mobile md:px-margin-desktop max-w-2xl">
+<span class="inline-block px-4 py-1.5 rounded-full bg-brand-teal text-white font-label-md text-label-md mb-6 transform translate-y-4 opacity-0 transition-all duration-700 delay-300" id="slide-2-badge">Success Stories</span>
+<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-white mb-6 transform translate-y-4 opacity-0 transition-all duration-700 delay-500" id="slide-2-title">Achieve Top Ranks In Acedemics</h1>
+<p class="font-body-lg text-body-lg text-white/90 mb-10 transform translate-y-4 opacity-0 transition-all duration-700 delay-700" id="slide-2-text">Helping young minds build a strong foundation through personalized attention, easy learning methods, and consistent academic support.</p>
+<button class="bg-brand-teal text-white px-8 py-4 rounded-full font-label-md text-label-md flex items-center gap-3 hover:scale-105 active:scale-95 transition-all shadow-xl hover:shadow-brand-teal/40 transform translate-y-4 opacity-0 transition-all duration-700 delay-900" id="slide-2-btn">
+                        Explore Success Stories
+                        <span class="material-symbols-outlined" data-icon="star">star</span>
+</button>
+</div>
+</div>
+
+<!-- Slide 3 -->
+<div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0 flex items-center">
+
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-navy/70 to-transparent z-10"></div>
+
+        <img class="w-full h-full object-cover"
+             data-alt="College students in a modern library"
+             src="image 3.png"/>
+    </div>
+
+    <div class="relative z-20 px-margin-mobile md:px-margin-desktop max-w-2xl">
+
+        <span class="inline-block px-4 py-1.5 rounded-full bg-brand-teal text-white font-label-md text-label-md mb-6 transform translate-y-4 opacity-0 transition-all duration-700 delay-300"
+              id="slide-3-badge">
+            Better Basics
+        </span>
+
+        <h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-white mb-6 transform translate-y-4 opacity-0 transition-all duration-700 delay-500"
+            id="slide-3-title">
+            Best home tuition for bright future
+        </h1>
+
+        <p class="font-body-lg text-body-lg text-white/90 mb-10 transform translate-y-4 opacity-0 transition-all duration-700 delay-700"
+           id="slide-3-text">
+            Dedicated home tutor for primary classes with 10 years of experience in making learning simple, interactive, and enjoyable for every child.
+        </p>
+
+        <button class="bg-brand-teal text-white px-8 py-4 rounded-full font-label-md text-label-md flex items-center gap-3 hover:scale-105 active:scale-95 transition-all shadow-xl hover:shadow-brand-teal/40 transform translate-y-4 opacity-0 transition-all duration-700 delay-900"
+                id="slide-3-btn">
+
+            future bright Guidance
+
+            <span class="material-symbols-outlined" data-icon="star">
+                star
+            </span>
+
+        </button>
+
+    </div>
+
+</div>
+</div>
+
+<!-- <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-4 z-30">
+<div class="slider-dot active h-2.5 w-6 rounded-full bg-white/40 cursor-pointer transition-all duration-500"></div>
+<div class="slider-dot h-2.5 w-2.5 rounded-full bg-white/40 cursor-pointer transition-all duration-500"></div>
+</div> -->
+
+
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-4 z-30">
+
+    <div class="slider-dot active h-2.5 w-6 rounded-full bg-white/40 cursor-pointer transition-all duration-500"></div>
+
+    <div class="slider-dot h-2.5 w-2.5 rounded-full bg-white/40 cursor-pointer transition-all duration-500"></div>
+
+    <div class="slider-dot h-2.5 w-2.5 rounded-full bg-white/40 cursor-pointer transition-all duration-500"></div>
+
+</div>
+</section>
+<!-- Partner Logo -->
+<section class="py-16 bg-white overflow-hidden border-y border-outline-variant/10">
+
+    <div class="flex items-center gap-16 animate-marquee whitespace-nowrap">
+
+        <!-- First Logo Set -->
+        <div class="flex gap-24 items-center px-4">
+
+            <img src="logos/logo 1.png"
+                 alt="Ayushi Classes"
+                 class="h-20 w-20 grayscale hover:grayscale-0 transition-all duration-300">
+
+            <img src="logos/logo 2.png"
+                 alt="Smart Learning Hub"
+                 class="h-20 w-20 grayscale hover:grayscale-0 transition-all duration-300">
+
+            <img src="logos/logo 3.png"
+                 alt="Bright Future Academy"
+                 class="h-20 w-20 grayscale hover:grayscale-0 transition-all duration-300">
+
+            <img src="logos/logo 4.png"
+                 alt="Future Mind Education"
+                 class="h-20 w-20 grayscale hover:grayscale-0 transition-all duration-300">
+
+            <img src="logos/logo 5.png"
+                 alt="Knowledge Point"
+                 class="h-20 w-20 grayscale hover:grayscale-0 transition-all duration-300">
+
+            <img src="logos/logo 6.png"
+                 alt="Inspire Academy"
+                 class="h-20 w-20 grayscale hover:grayscale-0 transition-all duration-300">
+
+        </div>
+
+        <!-- Duplicate Set For Infinite Scroll -->
+        <div class="flex gap-24 items-center px-4">
+
+            <img src="logos/logo 1.png"
+                 alt="Ayushi Classes"
+                 class="h-20 w-20 grayscale hover:grayscale-0 transition-all duration-300">
+
+            <img src="logos/logo 2.png"
+                 alt="Smart Learning Hub"
+                 class="h-20 w-20 grayscale hover:grayscale-0 transition-all duration-300">
+
+            <img src="logos/logo 3.png"
+                 alt="Bright Future Academy"
+                 class="h-20 w-20 grayscale hover:grayscale-0 transition-all duration-300">
+
+            <img src="logos/logo 4.png"
+                 alt="Future Mind Education"
+                 class="h-20 w-20 grayscale hover:grayscale-0 transition-all duration-300">
+
+            <img src="logos/logo 5.png"
+                 alt="Knowledge Point"
+                 class="h-20 w-20 grayscale hover:grayscale-0 transition-all duration-300">
+
+            <img src="logos/logo 6.png"
+                 alt="Inspire Academy"
+                 class="h-20 w-20 grayscale hover:grayscale-0 transition-all duration-300">
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Courses Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface" id="courses">
+
+    <div class="max-w-container-max mx-auto">
+
+        <!-- Section Heading -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+
+            <div class="max-w-xl reveal">
+
+                <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-brand-navy mb-4">
+                    Our Learning Programs
+                </h2>
+
+                <p class="font-body-lg text-body-lg text-on-surface-variant">
+                    Personalized home tuition programs designed to build strong academic foundations and improve learning confidence.
+                </p>
+
+            </div>
+
+            <button class="text-brand-teal font-label-md text-label-md flex items-center gap-2 hover:translate-x-2 transition-transform reveal">
+
+                View All Courses
+
+                <span class="material-symbols-outlined" data-icon="chevron_right">
+                    chevron_right
+                </span>
+
+            </button>
+
+        </div>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <!-- Course Card 1 -->
+            <div class="reveal group bg-white p-10 rounded-3xl shadow-sm border border-outline-variant/10 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3">
+
+                <div class="w-16 h-16 rounded-2xl bg-brand-navy/5 flex items-center justify-center mb-8 group-hover:bg-brand-navy group-hover:scale-110 transition-all duration-500">
+
+                    <span class="material-symbols-outlined text-brand-navy text-3xl group-hover:text-white transition-colors" data-icon="school">
+                        school
+                    </span>
+
+                </div>
+
+                <h3 class="font-headline-md text-headline-md text-brand-navy mb-4">
+                    Home Tuition Support
+                </h3>
+
+                <p class="font-body-md text-body-md text-on-surface-variant mb-10">
+                    Individual attention for students with simple teaching methods, homework support, and regular practice sessions.
+                </p>
+
+                <div class="flex items-center gap-2 text-brand-teal font-label-md text-label-md group-hover:gap-4 transition-all">
+
+                    Learn more
+
+                    <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">
+                        arrow_forward
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Course Card 2 -->
+            <div class="reveal group bg-white p-10 rounded-3xl shadow-sm border border-outline-variant/10 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 delay-100">
+
+                <div class="w-16 h-16 rounded-2xl bg-brand-teal/5 flex items-center justify-center mb-8 group-hover:bg-brand-teal group-hover:scale-110 transition-all duration-500">
+
+                    <span class="material-symbols-outlined text-brand-teal text-3xl group-hover:text-white transition-colors" data-icon="menu_book">
+                        menu_book
+                    </span>
+
+                </div>
+
+                <h3 class="font-headline-md text-headline-md text-brand-navy mb-4">
+                    Classes Nursery To 5
+                </h3>
+
+                <p class="font-body-md text-body-md text-on-surface-variant mb-10">
+                    Personalized home tuition for Nursery to Class 5 students with individual attention, easy learning methods, and strong concept building.
+                </p>
+
+                <div class="flex items-center gap-2 text-brand-teal font-label-md text-label-md group-hover:gap-4 transition-all">
+
+                    Learn more
+
+                    <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">
+                        arrow_forward
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Course Card 3 -->
+            <div class="reveal group bg-white p-10 rounded-3xl shadow-sm border border-outline-variant/10 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 delay-200">
+
+                <div class="w-16 h-16 rounded-2xl bg-brand-navy/5 flex items-center justify-center mb-8 group-hover:bg-brand-navy group-hover:scale-110 transition-all duration-500">
+
+                    <span class="material-symbols-outlined text-brand-navy text-3xl group-hover:text-white transition-colors" data-icon="translate">
+                        translate
+                    </span>
+
+                </div>
+
+                <h3 class="font-headline-md text-headline-md text-brand-navy mb-4">
+                    English For Bengali Medium
+                </h3>
+
+                <p class="font-body-md text-body-md text-on-surface-variant mb-10">
+                    Special English coaching for Bengali medium school students focused on grammar, reading, writing, speaking, and exam preparation.
+                </p>
+
+                <div class="flex items-center gap-2 text-brand-teal font-label-md text-label-md group-hover:gap-4 transition-all">
+
+                    Learn more
+
+                    <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">
+                        arrow_forward
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Testimonials -->
+<!-- Gallery Section -->
+<section class="py-24 bg-surface-container-low overflow-hidden" id="gallery">
+
+    <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-16 reveal">
+
+        <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-brand-navy mb-4">
+            Our Learning Environment
+        </h2>
+
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+            Explore personalized home tutoring sessions designed to make learning simple, engaging, and effective for every child.
+        </p>
+
+    </div>
+
+    <!-- Moving Gallery -->
+    <div class="relative flex overflow-x-hidden group">
+
+        <div class="animate-marquee flex gap-8 py-4 px-4">
+
+            <!-- Image 1 -->
+            <div class="w-80 h-60 flex-shrink-0">
+                <img 
+                    alt="Home Tuition Session"
+                    class="w-full h-full object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500"
+                    src="Home Tuition.webp"
+                />
+            </div>
+
+            <!-- Image 2 -->
+            <div class="w-80 h-60 flex-shrink-0">
+                <img 
+                    alt="Online Teaching"
+                    class="w-full h-full object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500"
+                    src="online classes.jpg"
+                />
+            </div>
+
+            <!-- Image 3 -->
+            <div class="w-80 h-60 flex-shrink-0">
+                <img 
+                    alt="Student Learning"
+                    class="w-full h-full object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500"
+                    src="student learning.png"
+                />
+            </div>
+
+            <!-- Image 4 -->
+            <div class="w-80 h-60 flex-shrink-0">
+                <img 
+                    alt="Study Session"
+                    class="w-full h-full object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500"
+                    src="study session.jpg"
+                />
+            </div>
+
+        </div>
+
+        <!-- Duplicate for Infinite Scroll -->
+        <div aria-hidden="true" class="animate-marquee flex gap-8 py-4 px-4">
+
+            <div class="w-80 h-60 flex-shrink-0">
+                <img 
+                    alt="Home Tuition Session"
+                    class="w-full h-full object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500"
+                    src="Home Tuition.webp"
+                />
+            </div>
+
+            <div class="w-80 h-60 flex-shrink-0">
+                <img 
+                    alt="Online Teaching"
+                    class="w-full h-full object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500"
+                    src="online classes.jpg"
+                />
+            </div>
+
+            <div class="w-80 h-60 flex-shrink-0">
+                <img 
+                    alt="Student Learning"
+                    class="w-full h-full object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500"
+                    src="student learning.png"
+                />
+            </div>
+
+            <div class="w-80 h-60 flex-shrink-0">
+                <img 
+                    alt="Study Session"
+                    class="w-full h-full object-cover rounded-3xl shadow-xl hover:scale-105 transition duration-500"
+                    src="study session.jpg"
+                />
+            </div>
+
+        </div>
+
+    </div>
+
+<section class="py-24 bg-brand-navy text-white overflow-hidden" id="testimonials">
+
+    <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-20 reveal">
+
+        <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4">
+            What Parents & Students Say
+        </h2>
+
+        <p class="text-white/60 font-body-lg text-body-lg">
+            Trusted by parents for quality teaching, personal attention, and better learning support.
+        </p>
+
+    </div>
+
+    <div class="flex gap-8 overflow-x-auto px-margin-mobile md:px-margin-desktop no-scrollbar pb-10">
+
+        <!-- Testimonial 1 -->
+        <div class="flex-none w-[340px] md:w-[480px] bg-white/5 backdrop-blur-lg p-10 md:p-14 rounded-3xl border border-white/10 reveal hover:bg-white/10 transition-all duration-500">
+
+            <div class="flex gap-1.5 mb-8">
+                <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1">star</span>
+                <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1">star</span>
+                <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1">star</span>
+                <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1">star</span>
+                <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1">star</span>
+            </div>
+
+            <p class="text-body-lg md:text-headline-md font-headline-md mb-10 italic leading-relaxed">
+                "My child has improved a lot in studies after joining Ayushi Classes. The teaching style is simple, caring, and easy to understand."
+            </p>
+
+            <div class="flex items-center gap-5">
+
+                <div class="w-14 h-14 rounded-full bg-brand-teal/20 flex items-center justify-center text-brand-teal font-bold text-lg">
+                    RS
+                </div>
+
+                <div>
+                    <p class="font-label-md text-label-md text-white">
+                        Rinki Saha
+                    </p>
+
+                    <p class="font-label-sm text-label-sm text-white/50">
+                        Parent of Class 3 Student
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="flex-none w-[340px] md:w-[480px] bg-white/5 backdrop-blur-lg p-10 md:p-14 rounded-3xl border border-white/10 reveal delay-100 hover:bg-white/10 transition-all duration-500">
+
+            <div class="flex gap-1.5 mb-8">
+                <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1">star</span>
+                <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1">star</span>
+                <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1">star</span>
+                <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1">star</span>
+                <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1">star</span>
+            </div>
+
+            <p class="text-body-lg md:text-headline-md font-headline-md mb-10 italic leading-relaxed">
+                "Very friendly and supportive teacher. My daughter now enjoys learning English and feels more confident in school."
+            </p>
+
+            <div class="flex items-center gap-5">
+
+                <div class="w-14 h-14 rounded-full bg-brand-teal/20 flex items-center justify-center text-brand-teal font-bold text-lg">
+                    AP
+                </div>
+
+                <div>
+                    <p class="font-label-md text-label-md text-white">
+                        Ananya Paul
+                    </p>
+
+                    <p class="font-label-sm text-label-sm text-white/50">
+                        Parent of Class 5 Student
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="flex-none w-[340px] md:w-[480px] bg-white/5 backdrop-blur-lg p-10 md:p-14 rounded-3xl border border-white/10 reveal delay-200 hover:bg-white/10 transition-all duration-500">
+
+            <div class="flex gap-1.5 mb-8">
+                <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1">star</span>
+                <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1">star</span>
+                <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1">star</span>
+                <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1">star</span>
+                <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1">star</span>
+            </div>
+
+            <p class="text-body-lg md:text-headline-md font-headline-md mb-10 italic leading-relaxed">
+                "Excellent guidance and personal attention. Homework support and regular practice really helped my son improve."
+            </p>
+
+            <div class="flex items-center gap-5">
+
+                <div class="w-14 h-14 rounded-full bg-brand-teal/20 flex items-center justify-center text-brand-teal font-bold text-lg">
+                    KS
+                </div>
+
+                <div>
+                    <p class="font-label-md text-label-md text-white">
+                         Komal Sharma 
+                    </p>
+
+                    <p class="font-label-sm text-label-sm text-white/50">
+                        Parent of Nursery Student
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Contact Form Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-white" id="contact">
+
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+
+        <!-- Left Content -->
+        <div class="reveal">
+
+            <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-brand-navy mb-8 leading-tight">
+                Join Ayushi Classes Today
+            </h2>
+
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-12 leading-relaxed">
+                Fill out the form to enquire about home tuition classes. We will contact you shortly with complete details.
+            </p>
+
+            <div class="space-y-8">
+
+                <!-- Phone -->
+                <div class="flex items-start gap-5 hover:translate-x-2 transition-transform duration-300">
+
+                    <div class="w-12 h-12 rounded-2xl bg-brand-teal/10 flex items-center justify-center shrink-0">
+
+                        <span class="material-symbols-outlined text-brand-teal" data-icon="call">
+                            call
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <p class="font-label-md text-label-md text-brand-navy">
+                            Call Us
+                        </p>
+
+                        <p class="font-body-md text-body-md text-on-surface-variant">
+                            +91 7980315558
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-start gap-5 hover:translate-x-2 transition-transform duration-300">
+
+                    <div class="w-12 h-12 rounded-2xl bg-brand-teal/10 flex items-center justify-center shrink-0">
+
+                        <span class="material-symbols-outlined text-brand-teal" data-icon="mail">
+                            mail
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <p class="font-label-md text-label-md text-brand-navy">
+                            Email Us
+                        </p>
+
+                        <p class="font-body-md text-body-md text-on-surface-variant">
+                            ayushishaw72@gmail.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="reveal bg-surface-container-low p-10 md:p-14 rounded-3xl shadow-sm border border-outline-variant/10">
+
+            <form class="space-y-8" id="contact-form">
+
+                <!-- Name -->
+                <div>
+
+                    <label class="block font-label-md text-label-md text-brand-navy mb-3" for="name">
+                        Full Name
+                    </label>
+
+                    <input 
+                        class="w-full bg-white border border-outline-variant/30 rounded-2xl px-5 py-4 focus:ring-2 focus:ring-brand-teal focus:border-transparent outline-none transition-all placeholder:text-outline/50"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                        type="text"
+                    />
+
+                </div>
+
+                <!-- Phone -->
+                <div>
+
+                    <label class="block font-label-md text-label-md text-brand-navy mb-3" for="phone">
+                        Phone Number
+                    </label>
+
+                    <input 
+                        class="w-full bg-white border border-outline-variant/30 rounded-2xl px-5 py-4 focus:ring-2 focus:ring-brand-teal focus:border-transparent outline-none transition-all placeholder:text-outline/50"
+                        id="phone"
+                        placeholder="+91 9876543210"
+                        required
+                        type="tel"
+                    />
+
+                </div>
+
+                <!-- Class -->
+                <div>
+
+                    <label class="block font-label-md text-label-md text-brand-navy mb-3" for="class">
+                        Select Class
+                    </label>
+
+                    <select 
+                        class="w-full bg-white border border-outline-variant/30 rounded-2xl px-5 py-4 focus:ring-2 focus:ring-brand-teal focus:border-transparent outline-none transition-all appearance-none"
+                        id="class"
+                    >
+
+                        <option>Nursery</option>
+                        <option>KG</option>
+                        <option>Class 1</option>
+                        <option>Class 2</option>
+                        <option>Class 3</option>
+                        <option>Class 4</option>
+                        <option>Class 5</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Submit Button -->
+                <button 
+                    class="w-full bg-brand-navy text-white py-5 rounded-2xl font-headline-md text-headline-md hover:bg-brand-navy/90 hover:scale-[1.02] active:scale-95 transition-all shadow-xl shadow-brand-navy/20"
+                    type="submit"
+                >
+
+                    Submit Enquiry
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high py-20 px-margin-mobile md:px-margin-desktop border-t border-outline-variant/20">
+
+    <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between gap-16">
+
+        <!-- Left Side -->
+        <div class="max-w-sm">
+
+            <div class="flex items-center gap-3 mb-8">
+
+                <span class="font-headline-md text-headline-md text-brand-navy">
+                    Ayushi Classes
+                </span>
+
+            </div>
+
+            <p class="text-on-surface-variant font-body-md mb-10 leading-relaxed">
+                Personalized home tuition for Nursery to Class 5 students with special English guidance for Bengali medium schools.
+            </p>
+
+            <!-- Social Icons -->
+            <div class="flex gap-5">
+
+                <!-- WhatsApp -->
+                <a 
+                    class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center hover:text-green-500 hover:bg-green-50 transition-all shadow-sm active:scale-90"
+                    href="https://wa.me/919876543210"
+                    target="_blank"
+                >
+
+                    <span class="material-symbols-outlined">
+                        call
+                    </span>
+
+                </a>
+
+                <!-- Instagram -->
+                <a 
+                    class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center hover:text-pink-500 hover:bg-pink-50 transition-all shadow-sm active:scale-90"
+                    href="https://instagram.com/yourusername"
+                    target="_blank"
+                >
+
+                    <span class="material-symbols-outlined">
+                        photo_camera
+                    </span>
+
+                </a>
+
+                <!-- Email -->
+                <a 
+                    class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center hover:text-brand-teal hover:bg-brand-teal/5 transition-all shadow-sm active:scale-90"
+                    href="mailto:ayushiclasses@gmail.com"
+                >
+
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Footer Links -->
+        <div class="grid grid-cols-2 gap-16">
+
+            <!-- Quick Links -->
+            <div>
+
+                <h4 class="font-label-md text-label-md text-brand-navy mb-8">
+                    Quick Links
+                </h4>
+
+                <ul class="space-y-5">
+
+                    <li>
+                        <a class="text-on-surface-variant hover:text-brand-teal transition-colors text-body-md" href="#hero">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="text-on-surface-variant hover:text-brand-teal transition-colors text-body-md" href="#courses">
+                            Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="text-on-surface-variant hover:text-brand-teal transition-colors text-body-md" href="#gallery">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="text-on-surface-variant hover:text-brand-teal transition-colors text-body-md" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+
+                <h4 class="font-label-md text-label-md text-brand-navy mb-8">
+                    Contact Info
+                </h4>
+
+                <ul class="space-y-5">
+
+                    <li class="text-on-surface-variant text-body-md">
+                        📞 +91 7980315558
+                    </li>
+
+                    <li class="text-on-surface-variant text-body-md">
+                        📧 ayushishaw72@gmail.com
+                    </li>
+
+                    <li class="text-on-surface-variant text-body-md">
+                        📍 Home Tuition Available
+                    </li>
+
+                    <li class="text-on-surface-variant text-body-md">
+                        🕒 Mon - Sat : 8 AM - 8 PM
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="max-w-container-max mx-auto mt-20 pt-10 border-t border-outline-variant/20 text-center">
+
+        <p class="text-on-surface-variant font-label-sm text-label-sm">
+            © 2026 Ayushi Classes. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+<script>
+    // Hero Slider Logic with internal element transitions
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.slider-dot');
+    let currentSlide = 0;
+    let slideInterval;
+
+    function resetSlideAnims(index) {
+        const slide = slides[index];
+        const elements = [
+            slide.querySelector('span'),
+            slide.querySelector('h1'),
+            slide.querySelector('p'),
+            slide.querySelector('button')
+        ];
+        elements.forEach(el => {
+            el.classList.add('translate-y-4', 'opacity-0');
+            el.classList.remove('translate-y-0', 'opacity-100');
+        });
+    }
+
+    function triggerSlideAnims(index) {
+        const slide = slides[index];
+        const elements = [
+            slide.querySelector('span'),
+            slide.querySelector('h1'),
+            slide.querySelector('p'),
+            slide.querySelector('button')
+        ];
+        elements.forEach((el, i) => {
+            setTimeout(() => {
+                el.classList.remove('translate-y-4', 'opacity-0');
+                el.classList.add('translate-y-0', 'opacity-100');
+            }, 300 + (i * 200));
+        });
+    }
+
+    function changeSlide(index) {
+        slides[currentSlide].classList.replace('opacity-100', 'opacity-0');
+        dots[currentSlide].classList.remove('active', 'w-6');
+        dots[currentSlide].classList.add('w-2.5');
+        
+        resetSlideAnims(currentSlide);
+        
+        currentSlide = index;
+        
+        slides[currentSlide].classList.replace('opacity-0', 'opacity-100');
+        dots[currentSlide].classList.add('active', 'w-6');
+        dots[currentSlide].classList.remove('w-2.5');
+        
+        triggerSlideAnims(currentSlide);
+    }
+
+    function nextSlide() {
+        let next = (currentSlide + 1) % slides.length;
+        changeSlide(next);
+    }
+
+    // Initialize first slide animations
+    triggerSlideAnims(0);
+    slideInterval = setInterval(nextSlide, 6000);
+
+    // Dots interaction
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            clearInterval(slideInterval);
+            changeSlide(index);
+            slideInterval = setInterval(nextSlide, 6000);
+        });
+    });
+
+    // Mobile Menu Drawer with enhanced slide animation
+    const menuBtn = document.getElementById('mobile-menu-trigger');
+    const closeBtn = document.getElementById('drawer-close');
+    const drawer = document.getElementById('nav-drawer');
+    const overlay = document.getElementById('drawer-overlay');
+    const content = document.getElementById('drawer-content');
+    const drawerLinks = document.querySelectorAll('.drawer-link');
+
+    function toggleDrawer(open) {
+        if (open) {
+            drawer.classList.remove('invisible');
+            overlay.classList.replace('opacity-0', 'opacity-100');
+            content.classList.replace('translate-x-full', 'translate-x-0');
+            document.body.style.overflow = 'hidden';
+        } else {
+            overlay.classList.replace('opacity-100', 'opacity-0');
+            content.classList.replace('translate-x-0', 'translate-x-full');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                drawer.classList.add('invisible');
+            }, 500);
+        }
+    }
+
+    menuBtn.addEventListener('click', () => toggleDrawer(true));
+    closeBtn.addEventListener('click', () => toggleDrawer(false));
+    overlay.addEventListener('click', () => toggleDrawer(false));
+    drawerLinks.forEach(link => link.addEventListener('click', () => toggleDrawer(false)));
+
+    // Scroll Reveal Animation (Observer Pattern for "React-style" smooth feel)
+    const observerOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // Form Submit Interaction
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = e.target.querySelector('button');
+        const originalText = btn.innerHTML;
+        
+        btn.innerHTML = '<span class="flex items-center justify-center gap-2"><span class="animate-spin rounded-full h-5 w-5 border-2 border-white/30 border-t-white"></span> Sending...</span>';
+        btn.disabled = true;
+        
+        setTimeout(() => {
+            btn.innerHTML = 'Success! Sent';
+            btn.classList.replace('bg-brand-navy', 'bg-green-600');
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.classList.replace('bg-green-600', 'bg-brand-navy');
+                btn.disabled = false;
+                e.target.reset();
+            }, 3000);
+        }, 1500);
+    });
+
+    // Header interaction on scroll
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.classList.add('shadow-lg', 'h-16');
+            header.classList.remove('h-20');
+        } else {
+            header.classList.remove('shadow-lg', 'h-16');
+            header.classList.add('h-20');
+        }
+    });
+</script>
+</body></html>
